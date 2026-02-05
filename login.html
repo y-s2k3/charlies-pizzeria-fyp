@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Charlie's Pizzeria</title>
+  <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Add Navigation to login page -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🍕 Charlie's Pizzeria</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>  <!-- THIS MUST POINT TO index.html -->
+                <a href="menu.html">Menu</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login-page">
+        <div class="login-container">
+            <div class="login-card">
+                <h1>Login Here</h1>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Type Here..." required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Type Here..." required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-block">
+                        Login Here
+                    </button>
+                </form>
+                
+                <div class="login-footer">
+                    <a href="index.html">← Back to Home</a>  <!-- FIXED LINK -->
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Charlie's Pizzeria | IPD Submission</p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

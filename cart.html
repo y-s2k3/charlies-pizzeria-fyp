@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Charlie's Pizzeria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🍕 Charlie's Pizzeria</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cart.html" class="active cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="cart-page">
+        <div class="container">
+            <div class="cart-header">
+                <h1>Your Cart</h1>
+                <button class="btn-clear" id="clearCart" aria-label="Clear entire cart">
+                    <i class="fas fa-trash"></i> <span class="clear-text">Clear</span>
+                </button>
+            </div>
+            
+            <div class="cart-content">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <h3>1 x Margherita Pizza</h3>
+                            <p class="item-price">£9.99</p>
+                        </div>
+                        <div class="item-controls">
+                            <button class="qty-btn minus" data-id="1" aria-label="Decrease quantity of Margherita Pizza">
+                                <i class="fas fa-minus"></i>
+                                <span class="sr-only">Decrease quantity</span>
+                            </button>
+                            <span class="qty-value" data-id="1">1</span>
+                            <button class="qty-btn plus" data-id="1" aria-label="Increase quantity of Margherita Pizza">
+                                <i class="fas fa-plus"></i>
+                                <span class="sr-only">Increase quantity</span>
+                            </button>
+                            <button class="btn-remove" data-id="1" aria-label="Remove Margherita Pizza from cart">
+                                <i class="fas fa-times"></i> <span class="remove-text">remove</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <h3>2 x Garlic Bread</h3>
+                            <p class="item-price">£9.98</p>
+                        </div>
+                        <div class="item-controls">
+                            <button class="qty-btn minus" data-id="3" aria-label="Decrease quantity of Garlic Bread">
+                                <i class="fas fa-minus"></i>
+                                <span class="sr-only">Decrease quantity</span>
+                            </button>
+                            <span class="qty-value" data-id="3">2</span>
+                            <button class="qty-btn plus" data-id="3" aria-label="Increase quantity of Garlic Bread">
+                                <i class="fas fa-plus"></i>
+                                <span class="sr-only">Increase quantity</span>
+                            </button>
+                            <button class="btn-remove" data-id="3" aria-label="Remove Garlic Bread from cart">
+                                <i class="fas fa-times"></i> <span class="remove-text">remove</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>ORDER SUMMARY</h2>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">£19.97</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Delivery:</span>
+                        <span id="delivery">£2.99</span>
+                    </div>
+                    
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">£22.96</span>
+                    </div>
+                    
+                    <a href="checkout.html" class="btn-primary btn-block">
+                        CHECKOUT <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="menu.html" class="btn-secondary btn-block">
+                        Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Charlie's Pizzeria | Interim Submission</p>
+        </div>
+    </footer>
+
+   <script src="./js/app.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>

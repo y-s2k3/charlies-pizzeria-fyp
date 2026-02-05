@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Charlie's Pizzeria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🍕 Charlie's Pizzeria</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tracking.html" class="active">Track Order</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="tracking-page">
+        <div class="container">
+            <div class="tracking-header">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <h1>Track Order #1001</h1>
+            </div>
+            
+            <!-- Order Status -->
+            <div class="order-status">
+                <h2>ORDER STATUS</h2>
+                
+                <div class="status-timeline">
+                    <div class="status-step completed">
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3>Ordered</h3>
+                            <p>18:30 - Order received</p>
+                        </div>
+                    </div>
+                    
+                    <div class="status-step completed">
+                        <div class="step-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3>Preparing</h3>
+                            <p>18:45 - Chef is cooking</p>
+                        </div>
+                    </div>
+                    
+                    <div class="status-step active">
+                        <div class="step-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3>Out for Delivery</h3>
+                            <p>19:00 - On the way</p>
+                            <p class="eta">ETA: 19:20</p>
+                        </div>
+                    </div>
+                    
+                    <div class="status-step">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-info">
+                            <h3>Delivered</h3>
+                            <p>Estimated: 19:20</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Details -->
+                <div class="order-details">
+                    <h3>Order #1001 Details</h3>
+                    <div class="detail-row">
+                        <span>Margherita Pizza x1</span>
+                        <span>£9.99</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Garlic Bread x2</span>
+                        <span>£9.98</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Delivery Fee</span>
+                        <span>£2.99</span>
+                    </div>
+                    <div class="detail-row total">
+                        <span>Total</span>
+                        <span>£22.96</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Charlie's Pizzeria</p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+<script src="./js/tracking.js"></script>
+</body>
+</html>

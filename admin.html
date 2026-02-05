@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Charlie's Pizzeria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-page">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <h2>🍕 Charlie's Pizzeria</h2>
+                <p>Admin Panel Manager</p>
+            </div>
+            
+            <nav class="admin-nav">
+                <a href="admin.html" class="active">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+                <a href="#">
+                    <i class="fas fa-clipboard-list"></i> Reports
+                </a>
+                <a href="#">
+                    <i class="fas fa-pizza-slice"></i> Menu
+                </a>
+                <a href="#">
+                    <i class="fas fa-users"></i> Users
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-store"></i> View Store
+                </a>
+                <a href="login.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <h3>Today's Orders</h3>
+                        <p class="stat-number">24</p>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Active Orders -->
+            <section class="active-orders">
+                <h2>ACTIVE ORDERS</h2>
+                
+                <div class="order-card">
+                    <div class="order-header">
+                        <h3>#1001 - John</h3>
+                        <span class="order-total">£24.95</span>
+                    </div>
+                    <div class="order-status-badge">
+                        <span class="status preparing">Preparing</span>
+                    </div>
+                    <button class="btn-update">
+                        <i class="fas fa-sync-alt"></i> Update Status
+                    </button>
+                </div>
+                
+                <div class="order-card">
+                    <div class="order-header">
+                        <h3>#1002 - Sarah</h3>
+                        <span class="order-total">£18.99</span>
+                    </div>
+                    <div class="order-status-badge">
+                        <span class="status delivering">Out for delivery</span>
+                    </div>
+                    <button class="btn-update">
+                        <i class="fas fa-sync-alt"></i> Update Status
+                    </button>
+                </div>
+                
+                <!-- More orders can be added here -->
+            </section>
+            
+            <!-- Quick Actions -->
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-grid">
+                    <button class="action-btn">
+                        <i class="fas fa-plus-circle"></i>
+                        Add New Item
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-file-export"></i>
+                        Generate Report
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-user-cog"></i>
+                        Manage Staff
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-chart-line"></i>
+                        View Analytics
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+</html>
